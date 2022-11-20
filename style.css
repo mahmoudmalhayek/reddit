@@ -1,220 +1,243 @@
+.topnav {
+  display: flex;
+  width: max-content;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.logo {
+  display: flex;
+  width: 6em;
+}
+.topnav-p1 {
+  display: flex;
+  width: 7em;
+  align-items: center;
+  justify-content: center;
+  padding-right: 6px;
+}
 
-.topnav{
-    display: flex;
-    background-color: #ffffff;
-    padding: 0px 20px;
-    
+.topnav-p2 {
+  display: flex;
+  width: 7em;
+  align-items: flex-end;
+  justify-content: center;
 }
-.logo{
-    width: 125px; 
-    height: 45px;  
-    padding-right: 45px;
+.logo1 {
+  margin-top: 8px;
+  padding-right: 8px;
+  width: 1.2em;
 }
- .logo1 {
-    width: 27px;
-    height: 25px;
-    margin-right: 15px;
-    margin-top: 12px;
+.head1 {
+  
+  font-family: "IBM Plex Sans", sans-serif;
+ 
 }
-.head1{
-    margin-top: 12px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 500;
-    font-size: larger;
-}
-.search{
-    margin-left: 300px;
-    position: relative;
-    width: 850px;
-    height: 50px;
-    background-color: #ffffff;
-    border-radius: 60px;
-    transition: 0.5s;
-    box-shadow: 0 0 0 2px;
-    overflow: hidden;
+.search {
+  display: flex;
+  flex-direction: row;
+  width: 20em;
+  margin-left: 220px;
+  position: relative;
+  width: 650px;
+  height: 40px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 2px;
+  overflow: hidden;
 }
 .search .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    background: #ffffff;
-    border-radius: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 40px;
+  background: #f5f5f5;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.search .icon::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #5c5c5c;
+  border-radius: 50%;
+  transform: translate(-4px, -4px) rotate(315deg);
+}
+.search .icon::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #716f6f;
+  transform: translate(6px, 6px) rotate(315deg);
+}
+#mysearch {
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 10px 0px;
+  background-color: #f5f5f5;
+}
+.button {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+}
+.button button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Sans";
+  font-size: 15px;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  margin: 2px 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 2px solid #4997da;
+  background: transparent;
+  color: #4997da;
+  cursor: pointer;
+  align-items: center;
+}
+.button .button2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Sans";
+  font-size: 15px;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  margin: 2px 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 2px solid #4997da;
+  background-color: #0079d3;
+  color: #ffffff;
+  cursor: pointer;
+  align-items: center;
+}
+.user img {
+  width: 35px;
+  height: 35px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: center;
+  width: 20em;
+  font-family: "IBM Plex Sans";
+  margin-left: 15px;
+}
+.menu-p1 {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+.menu-p2 {
+  display: flex;
+  flex-direction: column;
+  width: 17em;
+}
+.menu h1 {
+  font-size: 10px;
+  font-family: "IBM Plex Sans";
+  color: #87aad2;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+.menu h2 {
+  font-size: 10px;
+  font-family: "IBM Plex Sans";
+  color: #87aad2;
+  padding-bottom: 0px;
+  padding-top: 25px;
+}
+.menuitem1 {
+  padding-bottom: 15px;
+  display: flex;
+  width: 10em;
+}
+.menu img {
+  width: 20px;
+  height: 20px;
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+.menu ul {
+  font-family: "Noto Sans", sans-serif;
+  padding-left: 0;
+  list-style-type: none;
+}
 
-}
-.search .icon::before{
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border: 3px solid #5c5c5c;
-    border-radius: 50%;
-    transform: translate(-4px,-4px) rotate(315deg);
-
-}
-.search .icon::after{
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 12px;
-    background: #716f6f;
-    transform: translate(6px,6px) rotate(315deg);
-    
-}
-#mysearch{
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    padding: 10px 0px;
-}
-.button{
-    padding: 0px 10px ;
-    
-}
-.button button{
-    font-family: 'IBM Plex Sans';
-    font-size: 20px;
-    width: 165px;
-    height: 50px;
-    text-align: center;
-    margin: 2px 10px;
-    border-radius: 50px;
-    font-weight: bold;
-    border: 2px solid #4997DA;
-    background: transparent;
-    color: #4997DA;
-    cursor: pointer;
-    align-items: center;
-}
-.button .button2{
-        font-family: 'IBM Plex Sans';
-        font-size: 20px;
-        width: 165px;
-        height: 50px;
-        text-align: center;
-        margin: 2px 10px;
-        border-radius: 50px;
-        font-weight: bold;
-        border: 2px solid #4997DA;
-        background-color: #0079D3;
-        color: #ffffff;
-        cursor: pointer;
-        align-items: center;
-}
-.user img{
-    width: 40px; 
-    height: 40px;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-.menu{
-    width: 270px;
-    height: 700px;
-    font-family: 'IBM Plex Sans';
-    font-size: 20px;
-    margin-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-}
-.menu h1{
-    font-size: 13px;
-    font-family: 'IBM Plex Sans';
-    color: #87AAD2;
-    padding-bottom: 20px;
-}
-.menu h2{
-    font-size: 13px;
-    font-family: 'IBM Plex Sans';
-    color: #87AAD2;
-    padding-bottom: 20px;
-    padding-top: 25px;
-}
-.menuitem1{
-    padding-bottom: 15px;
-}
-.menu img{
-    width: 25px;
-    height: 25px;
-}
-.menu a{
-    color: black;
-    text-decoration: none;
-
-}
-.menu ul{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
-    padding-left: 0;
-    list-style-type: none;
-}
-/* .topics{
-    width: 250px;
-}
-.topics button{
-    border: #ffffff;
-    background-color: #ffffff;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
-} */
 .side-nav li {
-    padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .side-nav a:hover {
-    background-color: rgb(241, 238, 238);
+  background-color: rgb(241, 238, 238);
 }
 .side-nav-ul ul {
-    padding-top: 5px;
-    padding-left: 30px;
-    display: none;
+  padding-top: 5px;
+  padding-left: 30px;
+  display: none;
 }
 .side-nav-ul li:hover ul {
-    display: block;
+  display: block;
 }
-.side-nav .sub-arrow::after{
-    content: '\203A';
-    float: right;
-    margin-right: 20px;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
+.side-nav .sub-arrow::after {
+  content: "\203A";
+  float: right;
+  margin-right: 20px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
 }
 .side-nav li:hover .sub-arrow::after {
-    content: '\2039';
+  content: "\2039";
 }
-.menu-end{
-    width: 270px;
-    height: 250px;
-    padding: 20px 24px 40px;
-    
+.menu-end {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 .menu-end p {
-    border-top: 2px solid gray;
-    
-    font-size: 18px;
-    font-family: 'Noto Sans', sans-serif;
+  border-top: 1px solid rgb(169, 169, 169);
+
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
 }
-.menu-end button{
-    font-family: 'Noto Sans';
-        font-size: 20px;
-        width: 270px;
-        height: 50px;
-        text-align: center;
-        margin: 2px 10px;
-        border-radius: 50px;
-        font-weight: bold;
-        border: 2px solid #4997DA;
-        background-color: #0079D3;
-        color: #ffffff;
-        cursor: pointer;
-        align-items: center;
+.menu-end button {
+  font-family: "Noto Sans";
+  font-size: 13px;
+  width: 230px;
+  height: 40px;
+  text-align: center;
+  margin: 2px 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 2px solid #4997da;
+  background-color: #0079d3;
+  color: #ffffff;
+  cursor: pointer;
+  align-items: center;
 }
