@@ -33,8 +33,16 @@ fetch('https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSe
   .then(json =>{
 
         json.forEach(element => {
+           
+            const feed = document.querySelector(".feed")
             const post = document.createElement("div");
+            post.style.backgroundColor = "white"
+            post.style.width = "50%";
+            post.style.height = "15%";
+            post.style.marginLeft = "120px";
+            post.style.paddingBottom = "15px";
             post.setAttribute("class","posts");
-            post.appendChild(document.getElementsByClassName("feed"));
+            feed.appendChild(post)
         });
   })
+  
