@@ -38,5 +38,5 @@ fetch('https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSe
   fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
   .then(json =>{
-            document.getElementById("post-author").innerText += json[1].name.substring(0,5);
+            document.getElementById("post-author").innerText += json[1].name;
   })
