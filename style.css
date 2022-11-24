@@ -537,7 +537,7 @@
   background-color: #f0ecec;
 }
 .vote img{
-  width: 60%;
+  width: 80%;
   height: 25%;
   align-self: center;
   padding-left: 20%;
@@ -552,7 +552,7 @@
   /* color: rgb(135, 138, 140); */
 }
 .arrow1{
-  margin-top: -70px;
+  margin-top: -10px;
 }
 .posts #post-author {
   flex-direction: row;
