@@ -247,6 +247,7 @@
 .feed {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
   width: 200%;
   max-width: 81.39%;
   max-height: 0%;
@@ -405,12 +406,12 @@
   display: flex;
   flex-direction: row;
   font-family: "IBM Plex Sans";
-  width: 47em;
+  width: 55%;
   height: 4em;
   margin-left: 120px;
   border-radius: 4px;
   background-color: #ffffff;
-  /* margin-bottom: 20px; */
+  justify-content: center;
 }
 .hot{
   margin-left: 10px;
@@ -520,4 +521,63 @@
   margin-left: -7px;
   width: 50%;
   padding-right: 5px;
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  margin-top: 20px;
+  width: 55%;
+  height: 8%;
+  background-color: #ffffff;
+}
+.vote{
+  width: 5%;
+  height: 100%;
+  background-color: #f0ecec;
+}
+.vote img{
+  width: 60%;
+  height: 25%;
+  align-self: center;
+  padding-left: 20%;
+  padding-top: 5px;
+}
+.vote #number{
+  font-size: 12px;
+  margin-top: 1px;
+  margin-left: 2px;
+  font-family: "IBM Plex Sans", sans-serif;;
+  font-weight: bold;
+  /* color: rgb(135, 138, 140); */
+}
+.arrow1{
+  margin-top: -70px;
+}
+.posts #post-author {
+  flex-direction: row;
+  margin-top: -120px;
+  padding-left: 50px;
+  font-size: 15px;
+}
+.posts #post-feed {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+.post-nav-down{
+  background-color: #ffffff;
+  width: 50%;
+  color: #9DA0A1;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+.post-nav-down img{
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+.post-nav-down a{
+  padding-right: 15px;
+  color: #9e9e9e;
 }
