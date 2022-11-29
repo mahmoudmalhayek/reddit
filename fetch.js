@@ -59,30 +59,79 @@ fetch(" https://jsonplaceholder.typicode.com/posts")
         "https://cdn.iconscout.com/icon/premium/png-256-thumb/shift-3028045-2520476.png"
       );
       vote.appendChild(arrow);
-      const number = document.getElementById("number");
+      const number = document.createElement("p");
+      number.textContent = "58.5K";
+      number.setAttribute("id", "number");
       vote.appendChild(number);
       const arrow1 = document.createElement("img");
       arrow1.setAttribute(
         "src",
-        "https://cdn.iconscout.com/icon/premium/png-256-thumb/down-key-1539282-1304375.png"
+        "https://cdn.iconscout.com/icon/premium/png-256-thumb/shift-3028045-2520476.png"
       );
       arrow1.setAttribute("class", "arrow1");
       vote.appendChild(arrow1);
-      const author = document.getElementById("post-author");
+      const author = document.createElement("p");
+      author.textContent = "r/";
+      author.setAttribute("id", "post-author");
+      author.innerText += json[i].body.substring(0, 8);
       post.appendChild(author);
-      const post_feed = document.getElementById("post-feed");
+      const post_feed = document.createElement("h2");
+      post_feed.setAttribute("id", "post_feed");
+      post_feed.innerText += json[i].title.substring(0, 69);
       post.appendChild(post_feed);
-      const post_down_nav = document.querySelector(".post-nav-down");
+      const post_down_nav = document.createElement("div");
+      post_down_nav.setAttribute("class", "post_down_nav");
       post.appendChild(post_down_nav);
-      const region = document.querySelector(".region");
-      feed.appendChild(region);
-      
+      var comments = document.createElement("a");
+      comments.href = "#";
+      var element1 = document.createElement("img");
+      element1.setAttribute("id","comment-img");
+      element1.src = "https://cdn1.iconfinder.com/data/icons/business-office-and-internet-3-4/48/102-512.png";
+      comments.textContent = "Comments";
+      comments.appendChild(element1);
+      post_down_nav.appendChild(comments);
+
+
+      var Share = document.createElement("a");
+      Share.href = "#";
+      var element2 = document.createElement("img");
+      element2.setAttribute("id","share-img");
+      element2.src = "http://cdn.onlinewebfonts.com/svg/img_260366.png";
+      Share.textContent = "Share";
+      Share.appendChild(element2);
+      post_down_nav.appendChild(Share);
+
+
+      var Save = document.createElement("a");
+      Save.href = "#";
+      var element3 = document.createElement("img");
+      element3.setAttribute("id","save-img");
+      element3.src = "https://uxwing.com/wp-content/themes/uxwing/download/user-interface/saved-icon.png";
+      Save.textContent = "Save";
+      Save.appendChild(element3);
+      post_down_nav.appendChild(Save);
+
+
+      // const number = document.getElementById("number");
+      // vote.appendChild(number);
+      // const author = document.getElementById("post-author");
+      // post.appendChild(author);
+      // const post_feed = document.getElementById("post-feed");
+      // post.appendChild(post_feed);
+      // const post_down_nav = document.querySelector(".post-nav-down");
+      // post.appendChild(post_down_nav);
+      // const region = document.querySelector(".region");
+      // feed.appendChild(region);
     }
-    // document.getElementById("post-feed").innerText += json[0].title;
   });
 
-fetch("https://jsonplaceholder.typicode.com/users")
-  .then((response) => response.json())
-  .then((json) => {
-    document.getElementById("post-author").innerText += json[1].name;
-  });
+  // fetch("https://jsonplaceholder.typicode.com/users")
+  // .then((response) => response.json())
+  // .then((json) => {
+  //   for (let i = 0; i < 12; i++) {
+  //   const author = document.createElement("p");
+  //     author.textContent = "r/";
+  //     author.setAttribute("id", "post-author");
+  //     post.appendChild(author);
+  //   }
+  // });
