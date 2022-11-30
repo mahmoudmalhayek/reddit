@@ -607,6 +607,7 @@
 
 }
 .near_communities{
+  display: block;
   width: 20em;
   height: 65vh;
   background-color: #ffffff;
