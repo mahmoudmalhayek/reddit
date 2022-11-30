@@ -693,3 +693,61 @@
   align-items: center;
   cursor: pointer;
 }
+
+.popular_communities{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 20em;
+  height: 50vh;
+  background-color: #ffffff;
+  
+}
+.popular_communities div{
+  margin-top: 5px;
+  height: 25%;
+  margin-bottom: 15px;
+  border-bottom: 0.001cm solid rgb(230, 230, 230);
+  font-family: "IBM Plex Sans";
+}
+.popular_communities div div{
+  display: none;
+  border-bottom: none;
+  font-size: 12px;
+  font-family: "IBM Plex Sans";
+}
+.popular_communities div:hover div{
+  display: block;
+}
+.popular_communities .sub-arrow::after {
+  content: "\203A";
+  float: right;
+  margin-right: 20px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+.popular_communities div:hover .sub-arrow::after {
+  content: "\2039";
+}
+#fashion{
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
