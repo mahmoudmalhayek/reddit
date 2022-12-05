@@ -45,7 +45,7 @@ fetch(
 fetch(" https://jsonplaceholder.typicode.com/posts")
   .then((response) => response.json())
   .then((json) => {
-    for (let i = 0; i < 13; i++) {
+    for (let i = 0; i < 12; i++) {
       const feed = document.querySelector(".feed");
       const post = document.createElement("div");
       const field = document.getElementById("field");
