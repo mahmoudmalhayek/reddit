@@ -45,11 +45,13 @@ fetch(
 fetch(" https://jsonplaceholder.typicode.com/posts")
   .then((response) => response.json())
   .then((json) => {
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 13; i++) {
       const feed = document.querySelector(".feed");
       const post = document.createElement("div");
+      const field = document.getElementById("field");
       post.setAttribute("class", "posts");
-      feed.appendChild(post);
+      field.appendChild(post);
+      feed.appendChild(field);
       const vote = document.createElement("div");
       vote.setAttribute("class", "vote");
       post.appendChild(vote);
@@ -110,7 +112,6 @@ fetch(" https://jsonplaceholder.typicode.com/posts")
       Save.textContent = "Save";
       Save.appendChild(element3);
       post_down_nav.appendChild(Save);
-
 
       // const number = document.getElementById("number");
       // vote.appendChild(number);
